@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "webpack-dev-server --env.apiKey=12345",
-    "build": "webpack"
+    "start:dev": "webpack-dev-server",
+    "build": "webpack --env.production"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-const BASE_URL = 'http://api.openweathermap.org/data/2.5/'
+const BASE_URL = 'https://api.openweathermap.org/data/2.5/'
 
 const fetchData = (url, options = {}) => {
   url += '&units=metric&appid=1045d8be61103660466df26e7ded58c1'

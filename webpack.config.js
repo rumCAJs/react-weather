@@ -23,11 +23,6 @@ module.exports = env => {
       contentBase: path.join(__dirname, 'dist'),
       compress: false,
       port: 9000
-    },
-    plugins: [
-      new webpack.DefinePlugin({
-        API_KEY: JSON.stringify(env.apiKey)
-      })
-    ]
+    }
   }
 }

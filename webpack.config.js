@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = env => {
-  const isProduction = env.production
+  const isProduction = env && env.production
   return {
     mode: isProduction ? 'production' : 'development',
     optimization: {

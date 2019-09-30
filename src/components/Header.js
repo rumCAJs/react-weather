@@ -1,12 +1,25 @@
+import React from 'react'
 import styled from 'styled-components'
 
-const Header = styled.div`
-  background-color: #0074d9;
+const StyledHeader = styled.div`
+  background: #0074d9;
+  background: linear-gradient(0deg, #0074d9 0%, #7fdbff 100%);
   color: #fff;
-  font-size: 54px;
   text-transform: uppercase;
   text-align: center;
   padding: 40px;
 `
+
+const StyledText = styled.div`
+  font-weight: bold;
+  font-size: 54px;
+  text-shadow: 2px 4px 2px #111;
+`
+
+const Header = ({ children }) => (
+  <StyledHeader>
+    <StyledText>{children}</StyledText>
+  </StyledHeader>
+)
 
 export { Header }

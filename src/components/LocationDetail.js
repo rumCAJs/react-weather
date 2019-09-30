@@ -41,6 +41,7 @@ const Heading = styled.div`
   text-align: center;
   font-size: 32px;
   font-weight: bold;
+  text-shadow: 2px 2px 0px #fff;
 `
 
 const LocationDetail = ({ location, onLoadForecast, forecast, isLoading, error }) => {

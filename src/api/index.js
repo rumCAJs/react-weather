@@ -8,7 +8,7 @@ const fetchData = (url, options = {}) => {
   })
     .then(res => {
       if (res.status > 400 || res.ok === false) {
-        throw new Error('cannot find city')
+        throw new Error('')
       }
       return res
     })

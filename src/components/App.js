@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   font-family: sans-serif;
 `
 
-function App({ store }) {
+const App = ({ store }) => {
   const { dispatch, subscribe } = store
   const state = store.getState()
 

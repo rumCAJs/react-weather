@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Input({ className, defaultValue, onChange, placeholder }) {
+const Input = ({ className, defaultValue, onChange, placeholder }) => {
   return (
     <input
       className={className}

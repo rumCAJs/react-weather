@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { Input } from './Input'
-import { Header } from './Header'
+import { Input } from '../Input'
+import { Header } from '../Header'
 import {
   getLocationData,
   changeLocation,
@@ -9,10 +9,10 @@ import {
   getForecast,
   changeForecast,
   changeSuggestions
-} from '../actions'
-import { SuggestList } from './SuggestList'
-import conf from '../config'
-import { LocationDetail } from '../components/LocationDetail'
+} from '../../actions'
+import { SuggestList } from '../SuggestList'
+import conf from '../../config'
+import { LocationDetail } from '../../components/LocationDetail'
 
 const searchInCached = (id, state, type = 'LOCATION') => {
   const cache = state.cache || {}

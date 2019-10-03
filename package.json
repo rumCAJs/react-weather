@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:dev": "jest --watch",
     "start:dev": "webpack-dev-server",
     "build": "webpack --env.production",
     "now-build": "webpack --env.production"

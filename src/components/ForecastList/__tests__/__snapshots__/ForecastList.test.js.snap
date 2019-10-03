@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="styled__Heading-ev9rqb-1 nYOfy"
+  >
+    Forecast for the following 4 days
+  </div>
+  <div
+    className="styled__Wrapper-ev9rqb-0 lhRYrb"
+  >
+    <div
+      className="styled__Wrapper-e48zi3-0 bkioAu"
+    >
+      <div
+        className="styled__Heading-e48zi3-2 eKSBRZ"
+      >
+        Friday
+      </div>
+      <div
+        className="styled__DateRow-e48zi3-3 jCVlji"
+      >
+        4.10.2019
+      </div>
+      <div
+        className="styled__Line-e48zi3-1 eNutno"
+      >
+        <span>
+          12:00
+        </span>
+        <span
+          className="styled__StyledTemp-zfc47z-0 VoffX"
+        >
+          18
+          °C
+        </span>
+        <img
+          className="WeatherIcon__StyledImg-qloq4m-0 kXqJBM"
+          height={50}
+          src="https://openweathermap.org/img/wn/null@2x.png"
+          width={50}
+        />
+      </div>
+    </div>
+    <div
+      className="styled__Wrapper-e48zi3-0 bkioAu"
+    >
+      <div
+        className="styled__Heading-e48zi3-2 eKSBRZ"
+      >
+        Saturday
+      </div>
+      <div
+        className="styled__DateRow-e48zi3-3 jCVlji"
+      >
+        5.10.2019
+      </div>
+      <div
+        className="styled__Line-e48zi3-1 eNutno"
+      >
+        <span>
+          12:00
+        </span>
+        <span
+          className="styled__StyledTemp-zfc47z-0 VoffX"
+        >
+          18
+          °C
+        </span>
+        <img
+          className="WeatherIcon__StyledImg-qloq4m-0 kXqJBM"
+          height={50}
+          src="https://openweathermap.org/img/wn/null@2x.png"
+          width={50}
+        />
+      </div>
+    </div>
+    <div
+      className="styled__Wrapper-e48zi3-0 bkioAu"
+    >
+      <div
+        className="styled__Heading-e48zi3-2 eKSBRZ"
+      >
+        Sunday
+      </div>
+      <div
+        className="styled__DateRow-e48zi3-3 jCVlji"
+      >
+        6.10.2019
+      </div>
+      <div
+        className="styled__Line-e48zi3-1 eNutno"
+      >
+        <span>
+          12:00
+        </span>
+        <span
+          className="styled__StyledTemp-zfc47z-0 VoffX"
+        >
+          18
+          °C
+        </span>
+        <img
+          className="WeatherIcon__StyledImg-qloq4m-0 kXqJBM"
+          height={50}
+          src="https://openweathermap.org/img/wn/null@2x.png"
+          width={50}
+        />
+      </div>
+    </div>
+    <div
+      className="styled__Wrapper-e48zi3-0 bkioAu"
+    >
+      <div
+        className="styled__Heading-e48zi3-2 eKSBRZ"
+      >
+        Monday
+      </div>
+      <div
+        className="styled__DateRow-e48zi3-3 jCVlji"
+      >
+        7.10.2019
+      </div>
+      <div
+        className="styled__Line-e48zi3-1 eNutno"
+      >
+        <span>
+          12:00
+        </span>
+        <span
+          className="styled__StyledTemp-zfc47z-0 VoffX"
+        >
+          18
+          °C
+        </span>
+        <img
+          className="WeatherIcon__StyledImg-qloq4m-0 kXqJBM"
+          height={50}
+          src="https://openweathermap.org/img/wn/null@2x.png"
+          width={50}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

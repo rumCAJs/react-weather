@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="styled__Wrapper-e48zi3-0 bkioAu"
+>
+  <div
+    className="styled__Heading-e48zi3-2 eKSBRZ"
+  >
+    Wednesday
+  </div>
+  <div
+    className="styled__DateRow-e48zi3-3 jCVlji"
+  >
+    25.9.2019
+  </div>
+  <div
+    className="styled__Line-e48zi3-1 eNutno"
+  >
+    <span>
+      09:00
+    </span>
+    <span
+      className="styled__StyledTemp-zfc47z-0 VoffX"
+    >
+      17
+      °C
+    </span>
+    <img
+      className="WeatherIcon__StyledImg-qloq4m-0 kXqJBM"
+      height={50}
+      src="https://openweathermap.org/img/wn/04d@2x.png"
+      width={50}
+    />
+  </div>
+</div>
+`;

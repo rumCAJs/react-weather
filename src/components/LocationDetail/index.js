@@ -1,48 +1,11 @@
 import React from 'react'
-import { Button } from './Button'
-import { ForecastList } from './ForecastList'
-import { Loader } from './Loader'
-import { Temp, TYPES } from './Temp'
-import styled from 'styled-components'
-import { Icon } from './WeatherIcon'
-
-const Wrapper = styled.div`
-  text-align: center;
-  padding: ${props => (props.hide ? '0' : '15px')};
-  background: rgba(150, 150, 150, 0.1);
-
-  a {
-    color: #0074d9;
-  }
-`
-
-const Line = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-
-  > * {
-    margin-right: 10px;
-  }
-
-  > *:last-child {
-    margin-right: 0;
-  }
-`
-
-const WeatherDescription = styled.span`
-  font-style: italic;
-  font-size: 24px;
-`
-
-const Heading = styled.div`
-  margin: 10px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  text-shadow: 2px 2px 0px #fff;
-`
+import { Button } from '../Button'
+import { ForecastList } from '../ForecastList'
+import { Loader } from '../Loader'
+import { Temp } from '../Temp'
+import { TYPES } from '../Temp/config'
+import { Icon } from '../WeatherIcon'
+import { Wrapper, Line, WeatherDescription, Heading } from './styled'
 
 const LocationDetail = ({ location, onLoadForecast, forecast, isLoading, error }) => {
   const weather = location && location.weather && location.weather[0] ? location.weather[0] : null

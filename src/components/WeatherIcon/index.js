@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import conf from '../config'
+import conf from '../../config'
 
 const StyledImg = styled.img`
   background: #fff;

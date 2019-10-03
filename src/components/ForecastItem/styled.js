@@ -1,8 +1,4 @@
-import React from 'react'
 import styled from 'styled-components'
-import { getWeekDay, getNiceDate } from '../utils'
-import { Temp } from './Temp'
-import { Icon } from './WeatherIcon'
 
 const Wrapper = styled.div`
   min-width: 180px;
@@ -50,24 +46,4 @@ const DateRow = styled.div`
   text-align: center;
 `
 
-const getTimeOfDay = txt => txt.replace(/^.*?\s(.{5}).*$/, '$1')
-
-const ForecastItem = ({ data }) => {
-  const date = new Date(data[0].dt_txt)
-  const dayOfWeek = getWeekDay(date)
-  return (
-    <Wrapper>
-      <Heading>{dayOfWeek}</Heading>
-      <DateRow>{getNiceDate(date)}</DateRow>
-      {data.map(chunk => (
-        <Line>
-          <span>{getTimeOfDay(chunk.dt_txt)}</span>
-          <Temp temp={chunk.main.temp} />
-          <Icon icon={chunk.weather && chunk.weather[0] ? chunk.weather[0].icon : null} width={50} height={50} />
-        </Line>
-      ))}
-    </Wrapper>
-  )
-}
-
-export { ForecastItem }
+export { Wrapper, Line, Heading, DateRow }

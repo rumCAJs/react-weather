@@ -1,21 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import { Loader } from './Loader'
-import { SuggestItem } from './SuggestItem'
+import React from 'react'
+import { Loader } from '../Loader'
+import { SuggestItem } from '../SuggestItem'
+import { Wrapper, Line } from './styled'
 
 const SuggestList = ({ items, onSuggestItemClick, isLoading, error, activeItem }) => {
-  const Wrapper = styled.div`
-    padding: 15px;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    cursor: pointer;
-  `
-
-  const Line = styled.div`
-    text-align: center;
-  `
-
   return (
     <>
       {items && items.length > 0 && <Line>Select one location from the below list</Line>}

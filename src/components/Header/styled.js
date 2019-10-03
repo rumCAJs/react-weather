@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 const StyledHeader = styled.div`
@@ -16,10 +15,4 @@ const StyledText = styled.div`
   text-shadow: 2px 4px 2px #111;
 `
 
-const Header = ({ children }) => (
-  <StyledHeader>
-    <StyledText>{children}</StyledText>
-  </StyledHeader>
-)
-
-export { Header }
+export { StyledHeader, StyledText }

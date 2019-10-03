@@ -7,6 +7,7 @@ const StyledTemp = temp => styled(temp)`
   color: #fff;
   border-radius: ${props => RADIUSES[props.type] || RADIUSES[TYPES.NORMAL]};
   font-size: ${props => SIZES[props.type] || SIZES[TYPES.NORMAL]};
+  box-shadow: 3px 3px 2px #999;
 `
 
 export { StyledTemp }

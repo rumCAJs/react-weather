@@ -7,8 +7,10 @@ const fetchData = (url, options = {}) => {
     ...options
   })
     .then(res => {
+      const err = new Error()
+      err.status = res.status
       if (res.status > 400 || res.ok === false) {
-        throw new Error('')
+        throw err
       }
       return res
     })

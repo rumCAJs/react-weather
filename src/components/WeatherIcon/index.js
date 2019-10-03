@@ -5,6 +5,7 @@ import conf from '../../config'
 const StyledImg = styled.img`
   background: #fff;
   border-radius: 10px;
+  box-shadow: 0 0 4px #999;
 `
 
 const Icon = ({ icon, width, height }) => {

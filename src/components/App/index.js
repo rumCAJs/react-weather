@@ -89,7 +89,6 @@ const App = ({ store }) => {
         error={suggestions.error}
         activeItem={location.current}
       />
-
       <LocationDetail
         onLoadForecast={() => handleForcastClick(location.current.id)}
         location={location.current}

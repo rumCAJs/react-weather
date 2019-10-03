@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   flex-flow: row;
   justify-content: center;
   cursor: pointer;
+  flex-wrap: wrap;
 `
 
 const Line = styled.div`

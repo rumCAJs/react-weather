@@ -11,8 +11,12 @@ const StyledHeader = styled.div`
 
 const StyledText = styled.div`
   font-weight: bold;
-  font-size: 54px;
+  font-size: 40px;
   text-shadow: 2px 4px 2px #111;
+
+  @media (min-width: 500px) {
+    font-size: 54px;
+  }
 `
 
 export { StyledHeader, StyledText }

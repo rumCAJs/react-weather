@@ -6,7 +6,7 @@ import { Wrapper, Line, Heading, DateRow } from './styled'
 import { getTimeOfDay } from './utils'
 
 const ForecastItem = ({ data }) => {
-  const date = new Date(data[0].dt_txt)
+  const date = new Date(data[0].dt_txt.replace(' ', 'T'))
   const dayOfWeek = getWeekDay(date)
   return (
     <Wrapper>

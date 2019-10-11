@@ -7,7 +7,7 @@ function* fetchSuggestions(action) {
     const suggestions = yield call(getSuggestions, action.location)
     yield put({ type: GET_SUGGESTIONS_SUCCESS, suggestions, location: action.location })
   } catch (e) {
-    yield put({ type: GET_SUGGESTIONS_FAIL, message: e.message })
+    yield put({ type: GET_SUGGESTIONS_FAIL, error: e.message })
   }
 }
 

@@ -10,7 +10,7 @@ function* fetchLocationData(action) {
       data
     })
   } catch (e) {
-    yield put({ type: GET_LOCATION_DATA_FAIL, message: e.message })
+    yield put({ type: GET_LOCATION_DATA_FAIL, error: e.message })
   }
 }
 

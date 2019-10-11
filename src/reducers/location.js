@@ -16,7 +16,7 @@ const defaultState = {
 export default (state = defaultState, action) => {
   switch (action.type) {
     case CHANGE_LOCATION:
-      return { ...state, current: action.location }
+      return { ...state, current: action.location, error: null }
     case GET_SUGGESTIONS:
       return { ...state, current: null }
     case GET_LOCATION_DATA:
@@ -27,7 +27,7 @@ export default (state = defaultState, action) => {
       return { ...state, current, cache, isLoading: false }
     }
     case GET_LOCATION_DATA_FAIL:
-      return { ...state, error: action.message, isLoading: false }
+      return { ...state, error: action.message, isLoading: false, error: action.error }
 
     default:
       return state

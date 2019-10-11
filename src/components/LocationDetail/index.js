@@ -6,11 +6,13 @@ import { Temp } from '../Temp'
 import { TYPES } from '../Temp/config'
 import { Icon } from '../WeatherIcon'
 import { Wrapper, Line, WeatherDescription, Heading } from './styled'
+import { Error } from '../Error'
 
-const LocationDetail = ({ location, onLoadForecast, forecast, isLoading, error }) => {
+const LocationDetail = ({ location, onLoadForecast, forecast, forecastError, isLoading, error }) => {
   const weather = location && location.weather && location.weather[0] ? location.weather[0] : null
   return (
     <Wrapper hide={!location}>
+      {error && <Error>{error}</Error>}
       {isLoading && <Loader />}
       {location && (
         <>
@@ -32,6 +34,7 @@ const LocationDetail = ({ location, onLoadForecast, forecast, isLoading, error }
             </a>
           </Line>
           {!forecast && <Button onClick={onLoadForecast}>Get 4 days Forecast</Button>}
+          {forecastError && <Error>{forecastError}</Error>}
           {forecast && <ForecastList forecast={forecast.list} />}
         </>
       )}

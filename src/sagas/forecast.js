@@ -10,7 +10,7 @@ function* fetchForecast(action) {
       data
     })
   } catch (e) {
-    yield put({ type: GET_FORECAST_FAIL, message: e.message })
+    yield put({ type: GET_FORECAST_FAIL, error: e.message })
   }
 }
 

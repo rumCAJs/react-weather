@@ -18,7 +18,7 @@ const defaultState = {
 export default (state = defaultState, action) => {
   switch (action.type) {
     case CHANGE_FORECAST:
-      return { ...state, current: action.forecast }
+      return { ...state, current: action.forecast, error: null }
     case GET_FORECAST:
       return { ...state, current: null, isLoading: true, error: null }
     case GET_FORECAST_SUCCESS: {
@@ -27,8 +27,7 @@ export default (state = defaultState, action) => {
       return { ...state, current, cache, isLoading: false }
     }
     case GET_FORECAST_FAIL:
-      state.isLoading = false
-      return { ...state, error: action.message, isLoading: false }
+      return { ...state, error: action.error, isLoading: false }
     case GET_SUGGESTIONS:
     case GET_LOCATION_DATA:
     case CHANGE_LOCATION:

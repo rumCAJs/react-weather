@@ -16,17 +16,17 @@ const defaultState = {
 export default (state = defaultState, action) => {
   switch (action.type) {
     case GET_SUGGESTIONS:
-      return { ...state, current: [], isLoading: false }
+      return { ...state, current: [], isLoading: false, error: null }
     case GET_SUGGESTIONS_SUCCESS: {
       const current = action.suggestions.list.slice(0, 5)
       current.downloaded = Date.now()
       const cache = { ...state.cache, [action.location]: current }
-      return { ...state, current, cache, isLoading: false }
+      return { ...state, current, cache, isLoading: false, error: null }
     }
     case GET_SUGGESTIONS_FAIL:
-      return { ...state, current: [], isLoading: false }
+      return { ...state, current: [], isLoading: false, error: action.error }
     case CHANGE_SUGGESTIONS:
-      return { ...state, current: action.suggestions }
+      return { ...state, current: action.suggestions, error: null }
 
     default:
       return state

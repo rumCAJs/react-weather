@@ -7,9 +7,14 @@ const fetchData = (url, options = {}) => {
     ...options
   })
     .then(res => {
-      const err = new Error()
-      err.status = res.status
       if (res.status > 400 || res.ok === false) {
+        const err = new Error()
+        err.status = res.status
+        let message = 'Unable to obtain data, please try again'
+        if (e.status >= 500) {
+          message = 'Internal server error, please try again later'
+        }
+        err.message = message
         throw err
       }
       return res

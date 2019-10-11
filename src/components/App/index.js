@@ -92,7 +92,9 @@ const App = ({ store }) => {
       <LocationDetail
         onLoadForecast={() => handleForcastClick(location.current.id)}
         location={location.current}
+        error={location.error}
         forecast={currentForecast}
+        forecastError={forecast.error}
       />
     </Wrapper>
   )
